@@ -1,0 +1,10 @@
+<div class="container">
+  <br> <br>
+  <app-search-bar (newURL)='updateVideoURL($event)'></app-search-bar>
+  <br> <br>
+  <div class="row">
+<div class="col-3"></div>
+<div class="col-9"  *ngIf="urlVideo!=''">   <app-video-view  [url]='urlVideo'></app-video-view></div>
+  </div>
+ 
+</div>>

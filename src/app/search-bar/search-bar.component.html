@@ -1,0 +1,13 @@
+<!-- <input type="text" class="form-control" id=""  > -->
+<form #participantForm="ngForm" (ngSubmit)="Search()">
+    <div class="form-group row">
+       
+        <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]='url.name' [ngModelOptions]="{standalone: true}">
+        </div>
+        <div style="text-align: center; margin-top: 50px;">
+            <button type="submit" class="btn btn-primary" style="background-color: #0B0B3B;color: white;"> search </button>
+        
+        </div>
+    </div>
+</form>
